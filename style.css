@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101828, #253b65);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    text-align: center;
+    color: #3157d5;
+    font-size: 34px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin: 10px 0 30px;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #202b45;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 13px;
+    border: 1px solid #d5dbea;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3157d5;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 17px;
+    background: #3157d5;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.88;
+}
+
+#authBtn {
+    width: 100%;
+}
+
+#toggleText {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+a {
+    color: #3157d5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#message, #taskMessage {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #d32f2f;
+    overflow-wrap: anywhere;
+}
+
+.user-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#userEmail {
+    color: #666;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.logout {
+    background: #e74c3c;
+}
+
+.add-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-row input {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+#addBtn {
+    background: #18a66a;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #f3f6fc;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.task-name {
+    flex: 1;
+    overflow-wrap: anywhere;
+    color: #26334d;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.edit-btn {
+    background: #e9a126;
+}
+
+.delete-btn {
+    background: #e74c3c;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #888;
+    padding: 15px 0;
+}
+
+@media (max-width: 450px) {
+    .card {
+        padding: 20px;
+    }
+
+    .task {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-buttons {
+        width: 100%;
+    }
+}

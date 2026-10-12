@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <h1>TaskFlow</h1>
+            <p class="subtitle">Organize your day, one task at a time.</p>
+
+            <div id="authBox">
+                <h2 id="formTitle">Create Account</h2>
+
+                <input type="email" id="email" placeholder="Enter your email">
+                <input type="password" id="password" placeholder="Enter password">
+
+                <button id="authBtn">Sign Up</button>
+
+                <p id="toggleText">
+                    Already have an account?
+                    <a href="#" id="toggleAuth">Login</a>
+                </p>
+
+                <p id="message"></p>
+            </div>
+
+            <div id="todoBox" style="display: none;">
+
+                <div class="user-row">
+                    <p id="userEmail"></p>
+                    <button id="logoutBtn" class="logout">Logout</button>
+                </div>
+
+                <h2>My Tasks</h2>
+
+                <div class="add-row">
+                    <input type="text" id="taskInput"
+                           placeholder="What needs to be done?">
+                    <button id="addBtn">Add</button>
+                </div>
+
+                <p id="taskMessage"></p>
+
+                <div id="taskList"></div>
+
+                <p id="emptyMessage">No tasks yet. Add your first task!</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
